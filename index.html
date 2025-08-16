@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <title>Portafolio | Jorman Estepa</title>
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Librerías -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js" defer></script>
+  <script defer src="/js/script.js"></script>
 </head>
 <body>
 
-  <!-- Menú lateral -->
+  <!-- Sidebar -->
   <aside class="sidebar">
     <div class="profile">
-      <img src="tu-foto.jpg" alt="Foto de perfil" />
-      <h2>Tu Nombre</h2>
+      <img src="assets/182583394.jpg" alt="Foto de perfil" class="hero-img" />
+      <h2>Jorman Estepa</h2>
       <p>Programador Junior</p>
     </div>
     <nav>
@@ -28,47 +32,71 @@
   <!-- Contenido principal -->
   <main class="main-content">
     <section id="inicio" class="hero">
-      <h1>Hola, soy <span>Tu Nombre</span></h1>
-      <p>En formación como desarrollador de software</p>
+      <h1>Hola, soy <span>Jorman</span></h1>
+      <p>En formación como desarrollador de software</p> <br>
+      <a href="#proyectos" class="cta">Ver Proyectos</a>
     </section>
 
     <section id="sobre-mi">
       <h2>Sobre mí</h2>
-      <p>Soy un programador junior con conocimientos en HTML, CSS, JS, y desarrollo de proyectos personales. Me apasiona crear soluciones y aprender constantemente nuevas tecnologías.</p>
+      <p>Soy un programador junior con conocimientos en HTML, CSS, JS, React Native, Java y Python. Me gusta aprender y crear proyectos que resuelvan problemas reales.</p>
     </section>
 
     <section id="habilidades">
       <h2>Habilidades</h2>
       <ul class="skills">
-        <li>HTML <span>✔️</span></li>
-        <li>CSS <span>✔️</span></li>
-        <li>JavaScript <span>✔️</span></li>
-        <li>React Native <span>⚙️</span></li>
-        <li>Python <span>⚙️</span></li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React Native</li>
+        <li>Python</li>
+        <li>Java / C++</li>
       </ul>
     </section>
 
     <section id="proyectos">
       <h2>Proyectos</h2>
       <div class="proyectos-grid">
+
+        <!-- MotivApp -->
         <div class="card">
-          <h3>App de Frases Motivacionales</h3>
-          <p>React Native + Expo + AsyncStorage</p>
+          <img src="assets/motivapp.png" alt="MotivApp" class="project-img"/>
+          <h3>MotivApp</h3>
+          <p>App de frases motivacionales con animaciones, categorías y almacenamiento local.</p>
+          <a href="https://github.com/ColverDev07/MotivApp" target="_blank">Ver en GitHub</a>
         </div>
+
+        <!-- AcmeBankO -->
         <div class="card">
-          <h3>Sistema de Permisos en Java</h3>
-          <p>Interfaz con Swing, archivos .txt, roles</p>
+          <h3>AcmeBankO</h3>
+          <p>Sistema bancario en Python para gestión de cuentas y transacciones.</p>
+          <a href="https://github.com/ColverDev07/AcmeBankO" target="_blank">Ver en GitHub</a>
         </div>
-        <!-- Agrega más proyectos aquí -->
+
+        <!-- Examen JS -->
+        <div class="card">
+          <h3>Examen JavaScript</h3>
+          <p>Ejercicios prácticos de JavaScript aplicados en entornos reales.</p>
+          <a href="https://github.com/ColverDev07/Examen_JavaScript_JormanEstepa" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <!-- Chatbot -->
+        <div class="card">
+          <h3>Chatbot</h3>
+          <p>Chatbot en Python integrado con API, diseñado como coach motivacional.</p>
+          <a href="https://github.com/ColverDev07/Chatbot-Jorman_Estepa" target="_blank">Ver en GitHub</a>
+        </div>
+
       </div>
     </section>
 
     <section id="contacto">
+      <center>
       <h2>Contacto</h2>
-      <p>Email: tunombre@email.com</p>
-      <p>GitHub: <a href="https://github.com/tuusuario" target="_blank">tuusuario</a></p>
+      <p>Email: devcolver@example.com</p>
+      <p>GitHub: <a href="https://github.com/ColverDev07" target="_blank">github.com/ColverDev07</a></p>
     </section>
   </main>
-
+</center>
 </body>
 </html>
